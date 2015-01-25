@@ -11,23 +11,23 @@ These signals were used to estimate variables of the feature vector for each pat
 'mean()' is used to denote Mean values of the signals.
 'std()' is used to denote Standard deviation of the signals
 
--tBodyAcc-XYZ
--tGravityAcc-XYZ
--tBodyAccJerk-XYZ
--tBodyGyro-XYZ
--tBodyGyroJerk-XYZ
--tBodyAccMag
--tGravityAccMag
--tBodyAccJerkMag
--tBodyGyroMag
--tBodyGyroJerkMag
--fBodyAcc-XYZ
--fBodyAccJerk-XYZ
--fBodyGyro-XYZ
--fBodyAccMag
--fBodyAccJerkMag
--fBodyGyroMag
--fBodyGyroJerkMag
+- tBodyAcc-XYZ
+- tGravityAcc-XYZ
+- tBodyAccJerk-XYZ
+- tBodyGyro-XYZ
+- tBodyGyroJerk-XYZ
+- tBodyAccMag
+- tGravityAccMag
+- tBodyAccJerkMag
+- tBodyGyroMag
+- tBodyGyroJerkMag
+- fBodyAcc-XYZ
+- fBodyAccJerk-XYZ
+- fBodyGyro-XYZ
+- fBodyAccMag
+- fBodyAccJerkMag
+- fBodyGyroMag
+- fBodyGyroJerkMag
 
 "activity" column denote the 6 activities.                  
 "subject" column denote the 30 subjects.

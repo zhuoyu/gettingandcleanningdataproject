@@ -4,12 +4,12 @@
 ## The Run_analysis script goes in the UCI directory which also contains the train and test folders
 
 ### The R code has 6 steps:
--Step 0: load the data files into R
--Step 1: Merges the training and the test sets to create one data set
--Step 2: Extracts only the measurements on the mean and standard deviation for each measurement.
--step 3: Uses descriptive activity names to name the activities in the data set
--step 4: Appropriately labels the data set with descriptive variable names. 
--step 5: Creates a second, independent tidy data set with the average of each variable for each activity and each subject
+- Step 0: load the data files into R
+- Step 1: Merges the training and the test sets to create one data set
+- Step 2: Extracts only the measurements on the mean and standard deviation for each measurement.
+- step 3: Uses descriptive activity names to name the activities in the data set
+- step 4: Appropriately labels the data set with descriptive variable names. 
+- step 5: Creates a second, independent tidy data set with the average of each variable for each activity and each subject
 
 Step 0: load the data files into R
  - 8 files are loaded into R using read.table() function: features.txt, activity_labels.txt, test/X_test.txt, test/y_test.txt, test/subject_test.txt, train/X_train.txt, train/y_train.txt, train/subject_train.txt

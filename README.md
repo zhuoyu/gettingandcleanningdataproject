@@ -1,9 +1,7 @@
-# gettingandcleanningdataproject
-getting and cleanning data course project
 
 ## Explanation about the R script
 
-# "The Run_analysis script goes in the UCI directory which also contains the train and test folders"
+## The Run_analysis script goes in the UCI directory which also contains the train and test folders
 
 ### The R code has 6 steps:
 Step 0: load the data files into R
@@ -39,3 +37,6 @@ step 5: Creates a second, independent tidy data set with the average of each var
  - re-label the group column
  - save the result into the Tidy.txt file
  
+ 
+ Actually the requirement of this project is not clear. In step 5: "From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject." The "variable" has two interpretations: the measurement variable and the variable in the dataset. If it is the measurement variable, the columns with 'std()' in their names should not be included in the final data set. average of standard deviations is not meaningful. If it is variables in the dataset, then all columns in the extracted data set should be included. I believe the first interpretation is more meaningful. However, providing more is usually better than providing less. So I also included the std() columns in the results. 
+

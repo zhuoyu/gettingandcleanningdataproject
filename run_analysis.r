@@ -89,11 +89,11 @@ colnames(mergedData_extract) <- c(as.character(features[mean_std,2]),c("activity
 mergedData_extract$new_group <- (factor(mergedData_extract$subject)):(mergedData_extract$activity)
 
 # define a new data frame to save the averages of each variable for each subject and activity
-mergedData_extrac_average <- matrix(NA, nrow=length(levels(mergedData_extract$new_group)), ncol= ncol(mergedData_extract)-1)
+mergedData_extrac_average <- matrix(NA, nrow=length(levels(mergedData_extract$new_group)), ncol= ncol(mergedData_extract)-2)
 mergedData_extrac_average <- as.data.frame(mergedData_extrac_average)
 
 # use a loop to calculate the averages. Each iteration for each variable
-for (i in 1:(ncol(mergedData_extract)-1)) {
+for (i in 1:(ncol(mergedData_extract)-2)) {
 	if (i<=ncol(mergedData_extract)-4) {
 		mergedData_extrac_average[,i] <- tapply(mergedData_extract[,i],mergedData_extract$new_group,mean)
 	} else {
@@ -102,7 +102,7 @@ for (i in 1:(ncol(mergedData_extract)-1)) {
 }
 
 # rename the new data frame
-colnames(mergedData_extrac_average)=colnames(mergedData_extract)[1:ncol(mergedData_extrac_average)]
+colnames(mergedData_extrac_average)=colnames(mergedData_extract)[1:(ncol(mergedData_extrac_average))]
 
 # re-label the activity column
 mergedData_extrac_average$activity <-factor(c(mergedData_extrac_average$activity), labels=activity_labels[,2])
